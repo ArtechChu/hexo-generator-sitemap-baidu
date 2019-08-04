@@ -1,0 +1,29 @@
+{
+  "name": "hexo-generator-sitemap-baidu",
+  "version": "1.0.0",
+  "description": "generate baidu site xml",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtechChu/hexo-generator-sitemap-baidu.git"
+  },
+  "keywords": [
+    "sitemap",
+    "seo",
+    "hexo",
+    "baidu",
+    "baidu",
+    "seo",
+    "baidu",
+    "sitemap"
+  ],
+  "author": "JiMu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtechChu/hexo-generator-sitemap-baidu/issues"
+  },
+  "homepage": "https://github.com/ArtechChu/hexo-generator-sitemap-baidu#readme"
+}
