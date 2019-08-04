@@ -18,7 +18,9 @@
     "baidu",
     "seo",
     "baidu",
-    "sitemap"
+    "sitemap",
+	"generate",
+	"generator"
   ],
   "author": "JiMu",
   "license": "ISC",
