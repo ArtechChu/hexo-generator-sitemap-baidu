@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset>
-<%
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:mobile="http://www.baidu.com/schemas/sitemap-mobile/1/"> 
+  <%
   var baiduUrl = config.url
 
   if (config.baidusitemap.url) {
@@ -10,13 +11,15 @@
   var url = baiduUrl + config.root;
   posts.forEach(function(post){
   if(post.categories){
-%>  <url>
+%> <url>
     <loc><%- encodeURI(url + post.path) %></loc>
-<%	if(config.baidusitemap.isAutoAdapt){ %>
-		<mobile:mobile type="pc,mobile"/>
-<%	}%>
-    <lastmod><%= post.updated.toDate().toISOString().replace(/T.*$/i, "") || post.date.toDate().toISOString().replace(/T.*$/i, "") %></lastmod>
-	<changefreq>daily</changefreq>
-	<priority>0.8</priority>
+    <%  if(config.baidusitemap.isAutoAdapt){ %>
+     <mobile type="pc,mobile" />
+    <%  }%>
+    <lastmod>
+      <%= post.updated.toDate().toISOString().replace(/T.*$/i, "") || post.date.toDate().toISOString().replace(/T.*$/i, "") %>
+    </lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url><%}}) %>
 </urlset>
